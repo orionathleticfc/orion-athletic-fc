@@ -39,12 +39,7 @@ html {
 
 body {
   margin: 0;
-
-  font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
-
+  font-family: Arial, Helvetica, sans-serif;
   background: var(--fondo);
   color: var(--texto);
 }
@@ -69,23 +64,18 @@ a:hover {
 header {
   background: var(--azul-noche);
   color: var(--blanco);
-
   padding: 24px 20px;
-
   text-align: center;
-
   border-bottom: 3px solid var(--dorado);
 }
 
 header h1 {
   margin: 0;
-
   font-size: 36px;
 }
 
 header p {
   margin: 8px 0 0;
-
   color: var(--dorado-claro);
 }
 
@@ -96,25 +86,17 @@ header p {
 
 nav {
   background: var(--azul-oscuro);
-
   padding: 14px 20px;
-
   text-align: center;
-
   border-bottom: 1px solid var(--dorado);
 }
 
 nav a {
   display: inline-block;
-
   margin: 0 14px;
-
   color: var(--blanco);
-
   text-decoration: none;
-
   font-weight: bold;
-
   transition:
     color 0.2s ease,
     opacity 0.2s ease;
@@ -131,15 +113,11 @@ nav a:hover {
 
 .hero {
   min-height: 390px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 42px 20px;
-
   text-align: center;
-
   color: var(--blanco);
 
   background:
@@ -156,17 +134,14 @@ nav a:hover {
 .hero-content {
   width: 100%;
   max-width: 760px;
-
   margin: 0 auto;
 }
 
 .hero-logo {
   display: block;
-
   width: 180px;
   max-width: 45vw;
   height: auto;
-
   margin: 0 auto 18px;
 
   filter:
@@ -177,11 +152,8 @@ nav a:hover {
 
 .hero .stars {
   margin-bottom: 10px;
-
   color: var(--dorado-claro);
-
   font-size: 27px;
-
   letter-spacing: 12px;
 
   text-shadow:
@@ -190,29 +162,23 @@ nav a:hover {
 
 .hero h2 {
   margin: 12px 0;
-
   color: var(--blanco);
-
   font-size: 48px;
 }
 
 .hero p {
   margin: 10px 0;
-
   color: var(--crema);
-
   font-size: 20px;
 }
 
 .hero-motto {
   color: var(--dorado-claro) !important;
-
   font-weight: bold;
 }
 
 .highlight {
   color: var(--dorado-claro);
-
   font-weight: bold;
 }
 
@@ -224,9 +190,7 @@ nav a:hover {
 .container {
   width: 100%;
   max-width: 1180px;
-
   margin: 0 auto;
-
   padding: 44px 20px;
 }
 
@@ -237,35 +201,26 @@ nav a:hover {
 
 .section-heading {
   max-width: 720px;
-
   margin: 0 auto 32px;
-
   text-align: center;
 }
 
 .section-heading h2 {
   margin: 6px 0 8px;
-
   color: var(--azul-noche);
-
   font-size: 30px;
 }
 
 .section-heading p {
   margin: 0;
-
   color: var(--texto-suave);
-
   line-height: 1.5;
 }
 
 .section-kicker {
   color: var(--dorado);
-
   font-size: 12px;
-
   font-weight: bold;
-
   letter-spacing: 1.6px;
 }
 
@@ -276,28 +231,22 @@ nav a:hover {
 
 .sports-grid {
   display: grid;
-
   grid-template-columns:
     repeat(3, minmax(0, 1fr));
-
   gap: 20px;
-
   align-items: stretch;
 }
 
 .sports-card {
   display: flex;
   flex-direction: column;
-
   background: var(--blanco);
 
   border: 1px solid var(--borde);
   border-top: 4px solid var(--dorado);
 
   border-radius: 10px;
-
   padding: 24px;
-
   text-align: center;
 
   box-shadow:
@@ -317,29 +266,21 @@ nav a:hover {
 
 .sports-card h3 {
   margin: 10px 0 4px;
-
   color: var(--azul-noche);
-
   font-size: 20px;
 }
 
 .card-label {
   display: inline-block;
-
   color: var(--dorado);
-
   font-size: 11px;
-
   font-weight: bold;
-
   letter-spacing: 1.4px;
 }
 
 .competition-detail {
   margin: 5px 0 22px;
-
   color: var(--texto-suave);
-
   font-size: 14px;
 }
 
@@ -357,36 +298,28 @@ nav a:hover {
     minmax(0, 1fr);
 
   align-items: center;
-
   gap: 14px;
-
   margin: 20px 0 22px;
 }
 
 .match-team,
 .result-team {
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
-
   gap: 8px;
-
   min-width: 0;
 }
 
 .match-team strong,
 .result-team strong {
   font-size: 14px;
-
   line-height: 1.35;
 }
 
 .team-logo {
   width: 64px;
   height: 64px;
-
   object-fit: contain;
 }
 
@@ -395,14 +328,12 @@ nav a:hover {
   height: 56px;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 
   border-radius: 50%;
 
   background: var(--azul-noche);
-
   color: var(--dorado-claro);
 
   font-weight: bold;
@@ -410,23 +341,18 @@ nav a:hover {
 
 .match-vs {
   color: var(--texto-suave);
-
   font-size: 12px;
-
   font-weight: bold;
 }
 
 .match-date {
   margin-top: auto;
-
   padding-top: 15px;
 
   border-top: 1px solid var(--borde);
 
   color: var(--azul-noche);
-
   font-size: 14px;
-
   font-weight: bold;
 }
 
@@ -444,19 +370,14 @@ nav a:hover {
     minmax(0, 1fr);
 
   align-items: center;
-
   gap: 12px;
-
   margin: 20px 0 22px;
 }
 
 .score {
   color: var(--dorado);
-
   font-size: 34px;
-
   font-weight: bold;
-
   white-space: nowrap;
 }
 
@@ -471,40 +392,29 @@ nav a:hover {
 
 .position-number {
   margin-top: 12px;
-
   color: var(--azul-noche);
-
   font-size: 52px;
-
   font-weight: bold;
 }
 
 .position-label {
   display: inline-block;
-
   margin: 0 auto 22px;
-
   padding: 5px 12px;
 
   border-radius: 20px;
 
   background: var(--dorado);
-
   color: var(--azul-noche);
 
   font-size: 11px;
-
   font-weight: bold;
-
   letter-spacing: 1px;
 }
 
 .league-metrics {
   display: grid;
-
-  grid-template-columns:
-    repeat(3, 1fr);
-
+  grid-template-columns: repeat(3, 1fr);
   gap: 8px;
 
   padding: 15px 0;
@@ -515,29 +425,23 @@ nav a:hover {
 
 .league-metrics div {
   display: flex;
-
   flex-direction: column;
-
   gap: 4px;
 }
 
 .league-metrics strong {
   color: var(--azul-noche);
-
   font-size: 21px;
 }
 
 .league-metrics span {
   color: var(--texto-suave);
-
   font-size: 11px;
 }
 
 .league-gap {
   margin: 16px 0 0;
-
   color: var(--texto-suave);
-
   font-size: 13px;
 }
 
@@ -548,7 +452,6 @@ nav a:hover {
 
 .league-section {
   margin-top: 34px;
-
   overflow: hidden;
 
   background: var(--blanco);
@@ -564,34 +467,27 @@ nav a:hover {
 
 .league-header {
   display: flex;
-
   align-items: center;
   justify-content: space-between;
 
   gap: 24px;
-
   padding: 26px;
 }
 
 .league-header h2 {
   margin: 5px 0;
-
   color: var(--azul-noche);
-
   font-size: 28px;
 }
 
 .league-header p {
   margin: 0;
-
   color: var(--texto-suave);
 }
 
 .league-status {
   display: flex;
-
   flex-direction: column;
-
   align-items: flex-end;
 
   gap: 4px;
@@ -605,7 +501,6 @@ nav a:hover {
 
 .league-status span {
   color: var(--dorado);
-
   font-weight: bold;
 }
 
@@ -616,42 +511,44 @@ nav a:hover {
 
 .table-wrapper {
   width: 100%;
-
   overflow-x: auto;
 }
 
 .league-table {
   width: 100%;
-
   border-collapse: collapse;
-
+  table-layout: auto;
   font-size: 14px;
 }
 
 .league-table thead {
   background: var(--azul-noche);
-
   color: var(--blanco);
 }
 
 .league-table th,
 .league-table td {
   padding: 13px 10px;
-
   text-align: center;
+  vertical-align: middle;
 
   border-bottom: 1px solid var(--borde);
 }
 
 .league-table th {
   font-size: 12px;
-
   letter-spacing: 0.4px;
 }
 
-.league-table .team-column,
-.league-table .team-name {
+.league-table .team-column {
+  width: 28%;
   text-align: left;
+}
+
+.league-table .team-name {
+  text-align: left !important;
+  white-space: nowrap;
+  vertical-align: middle;
 }
 
 .league-table tbody tr {
@@ -669,18 +566,12 @@ nav a:hover {
 
 .orion-row .team-name {
   color: var(--azul-noche);
-
   font-weight: bold;
 }
 
 .team-name {
-  display: flex;
-
-  align-items: center;
-
-  gap: 8px;
-
   white-space: nowrap;
+  vertical-align: middle;
 }
 
 .table-logo {
@@ -688,6 +579,9 @@ nav a:hover {
   height: 25px;
 
   object-fit: contain;
+  vertical-align: middle;
+
+  margin-right: 8px;
 }
 
 .position-badge {
@@ -710,25 +604,21 @@ nav a:hover {
 
 .position-badge.first {
   background: var(--dorado);
-
   color: var(--azul-noche);
 }
 
 .points {
   color: var(--azul-noche);
-
   font-weight: bold;
 }
 
 .positive {
   color: #257747;
-
   font-weight: bold;
 }
 
 .negative {
   color: #a54646;
-
   font-weight: bold;
 }
 
@@ -739,9 +629,7 @@ nav a:hover {
 
 .form {
   display: flex;
-
   justify-content: center;
-
   gap: 4px;
 }
 
@@ -759,7 +647,6 @@ nav a:hover {
   color: var(--blanco);
 
   font-size: 12px;
-
   font-weight: bold;
 }
 
@@ -777,7 +664,6 @@ nav a:hover {
 
 .form .empty {
   background: #e6e8ea;
-
   color: #a0a5aa;
 }
 
@@ -788,17 +674,14 @@ nav a:hover {
 
 .league-note {
   display: flex;
-
   justify-content: center;
 
   gap: 28px;
-
   flex-wrap: wrap;
 
   padding: 16px 24px;
 
   background: var(--azul-noche);
-
   color: var(--crema);
 
   font-size: 13px;
@@ -806,7 +689,6 @@ nav a:hover {
 
 .league-note span:first-child {
   color: var(--dorado-claro);
-
   font-weight: bold;
 }
 
@@ -842,7 +724,6 @@ nav a:hover {
 
 .card h3 {
   margin-top: 0;
-
   color: var(--azul-oscuro);
 }
 
@@ -861,7 +742,6 @@ footer {
   padding: 28px 20px;
 
   background: var(--azul-noche);
-
   color: var(--blanco);
 
   text-align: center;
@@ -890,13 +770,11 @@ footer p {
 
   .league-header {
     flex-direction: column;
-
     align-items: flex-start;
   }
 
   .league-status {
     align-items: flex-start;
-
     text-align: left;
   }
 
@@ -927,7 +805,6 @@ footer p {
 
   .hero {
     min-height: 360px;
-
     padding: 34px 18px;
   }
 
@@ -937,7 +814,6 @@ footer p {
 
   .hero .stars {
     font-size: 23px;
-
     letter-spacing: 9px;
   }
 
@@ -950,9 +826,7 @@ footer p {
   }
 
   .container {
-    padding:
-      34px
-      14px;
+    padding: 34px 14px;
   }
 
   .section-heading h2 {
@@ -1006,9 +880,7 @@ footer p {
 
   .league-note {
     flex-direction: column;
-
     gap: 7px;
-
     text-align: center;
   }
 
