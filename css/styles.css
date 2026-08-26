@@ -1,5 +1,8 @@
 :root {
-  /* Identidad Orion Athletic F.C. */
+  /* =========================
+     IDENTIDAD ORION ATHLETIC F.C.
+  ========================= */
+
   --azul-noche: #07172f;
   --azul-oscuro: #0d2748;
   --azul-medio: #163d68;
@@ -15,7 +18,12 @@
   --texto-suave: #5d6878;
 
   --borde: #d7dce2;
+
+  --verde-victoria: #69a96d;
+  --rojo-derrota: #cf6868;
+  --gris-empate: #90969b;
 }
+
 
 /* =========================
    BASE
@@ -31,10 +39,28 @@ html {
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
   background: var(--fondo);
   color: var(--texto);
 }
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: var(--azul-medio);
+}
+
+a:hover {
+  color: var(--dorado);
+}
+
 
 /* =========================
    CABECERA
@@ -43,7 +69,9 @@ body {
 header {
   background: var(--azul-noche);
   color: var(--blanco);
-  padding: 24px;
+
+  padding: 24px 20px;
+
   text-align: center;
 
   border-bottom: 3px solid var(--dorado);
@@ -51,13 +79,16 @@ header {
 
 header h1 {
   margin: 0;
+
   font-size: 36px;
 }
 
 header p {
   margin: 8px 0 0;
+
   color: var(--dorado-claro);
 }
+
 
 /* =========================
    MENÚ
@@ -65,17 +96,22 @@ header p {
 
 nav {
   background: var(--azul-oscuro);
-  padding: 14px;
+
+  padding: 14px 20px;
+
   text-align: center;
 
   border-bottom: 1px solid var(--dorado);
 }
 
 nav a {
-  color: var(--blanco);
-  text-decoration: none;
+  display: inline-block;
 
   margin: 0 14px;
+
+  color: var(--blanco);
+
+  text-decoration: none;
 
   font-weight: bold;
 
@@ -88,6 +124,7 @@ nav a:hover {
   color: var(--dorado-claro);
 }
 
+
 /* =========================
    PORTADA
 ========================= */
@@ -99,9 +136,11 @@ nav a:hover {
   align-items: center;
   justify-content: center;
 
+  padding: 42px 20px;
+
   text-align: center;
 
-  padding: 42px 20px;
+  color: var(--blanco);
 
   background:
     radial-gradient(
@@ -110,8 +149,6 @@ nav a:hover {
       #0d2748 36%,
       #07172f 78%
     );
-
-  color: var(--blanco);
 
   border-bottom: 4px solid var(--dorado);
 }
@@ -123,57 +160,49 @@ nav a:hover {
   margin: 0 auto;
 }
 
-/* Escudo principal */
-
 .hero-logo {
   display: block;
 
-  width: 170px;
+  width: 180px;
   max-width: 45vw;
   height: auto;
 
   margin: 0 auto 18px;
 
   filter:
-    drop-shadow(0 8px 18px rgba(0, 0, 0, 0.28));
+    drop-shadow(
+      0 8px 18px rgba(0, 0, 0, 0.28)
+    );
 }
 
-/* Estrellas */
-
 .hero .stars {
+  margin-bottom: 10px;
+
   color: var(--dorado-claro);
 
   font-size: 27px;
 
   letter-spacing: 12px;
 
-  margin-bottom: 10px;
-
   text-shadow:
     0 0 8px rgba(240, 210, 122, 0.45);
 }
 
-/* Nombre */
-
 .hero h2 {
-  font-size: 48px;
-
-  margin: 12px 0 12px;
+  margin: 12px 0;
 
   color: var(--blanco);
+
+  font-size: 48px;
 }
 
-/* Texto principal */
-
 .hero p {
-  font-size: 20px;
+  margin: 10px 0;
 
   color: var(--crema);
 
-  margin: 10px 0;
+  font-size: 20px;
 }
-
-/* Lema */
 
 .hero-motto {
   color: var(--dorado-claro) !important;
@@ -181,48 +210,620 @@ nav a:hover {
   font-weight: bold;
 }
 
-/* Compatibilidad con highlight anterior */
-
 .highlight {
   color: var(--dorado-claro);
 
   font-weight: bold;
 }
 
+
 /* =========================
-   CONTENIDO
+   CONTENIDO GENERAL
 ========================= */
 
 .container {
-  max-width: 1100px;
+  width: 100%;
+  max-width: 1180px;
 
-  margin: auto;
+  margin: 0 auto;
 
-  padding: 40px 20px;
+  padding: 44px 20px;
 }
+
 
 /* =========================
-   TARJETAS
+   TÍTULOS DE SECCIÓN
 ========================= */
 
-.grid {
+.section-heading {
+  max-width: 720px;
+
+  margin: 0 auto 32px;
+
+  text-align: center;
+}
+
+.section-heading h2 {
+  margin: 6px 0 8px;
+
+  color: var(--azul-noche);
+
+  font-size: 30px;
+}
+
+.section-heading p {
+  margin: 0;
+
+  color: var(--texto-suave);
+
+  line-height: 1.5;
+}
+
+.section-kicker {
+  color: var(--dorado);
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  letter-spacing: 1.6px;
+}
+
+
+/* =========================
+   TARJETAS DEPORTIVAS
+========================= */
+
+.sports-grid {
   display: grid;
 
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
 
   gap: 20px;
+
+  align-items: stretch;
 }
+
+.sports-card {
+  display: flex;
+  flex-direction: column;
+
+  background: var(--blanco);
+
+  border: 1px solid var(--borde);
+  border-top: 4px solid var(--dorado);
+
+  border-radius: 10px;
+
+  padding: 24px;
+
+  text-align: center;
+
+  box-shadow:
+    0 3px 10px rgba(7, 23, 47, 0.08);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.sports-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 7px 18px rgba(7, 23, 47, 0.11);
+}
+
+.sports-card h3 {
+  margin: 10px 0 4px;
+
+  color: var(--azul-noche);
+
+  font-size: 20px;
+}
+
+.card-label {
+  display: inline-block;
+
+  color: var(--dorado);
+
+  font-size: 11px;
+
+  font-weight: bold;
+
+  letter-spacing: 1.4px;
+}
+
+.competition-detail {
+  margin: 5px 0 22px;
+
+  color: var(--texto-suave);
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   PRÓXIMO PARTIDO
+========================= */
+
+.match {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    auto
+    minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin: 20px 0 22px;
+}
+
+.match-team,
+.result-team {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 8px;
+
+  min-width: 0;
+}
+
+.match-team strong,
+.result-team strong {
+  font-size: 14px;
+
+  line-height: 1.35;
+}
+
+.team-logo {
+  width: 64px;
+  height: 64px;
+
+  object-fit: contain;
+}
+
+.team-placeholder {
+  width: 56px;
+  height: 56px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--azul-noche);
+
+  color: var(--dorado-claro);
+
+  font-weight: bold;
+}
+
+.match-vs {
+  color: var(--texto-suave);
+
+  font-size: 12px;
+
+  font-weight: bold;
+}
+
+.match-date {
+  margin-top: auto;
+
+  padding-top: 15px;
+
+  border-top: 1px solid var(--borde);
+
+  color: var(--azul-noche);
+
+  font-size: 14px;
+
+  font-weight: bold;
+}
+
+
+/* =========================
+   ÚLTIMO RESULTADO
+========================= */
+
+.result-box {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    auto
+    minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin: 20px 0 22px;
+}
+
+.score {
+  color: var(--dorado);
+
+  font-size: 34px;
+
+  font-weight: bold;
+
+  white-space: nowrap;
+}
+
+.score span {
+  color: var(--texto-suave);
+}
+
+
+/* =========================
+   RESUMEN DE LIGA
+========================= */
+
+.position-number {
+  margin-top: 12px;
+
+  color: var(--azul-noche);
+
+  font-size: 52px;
+
+  font-weight: bold;
+}
+
+.position-label {
+  display: inline-block;
+
+  margin: 0 auto 22px;
+
+  padding: 5px 12px;
+
+  border-radius: 20px;
+
+  background: var(--dorado);
+
+  color: var(--azul-noche);
+
+  font-size: 11px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+}
+
+.league-metrics {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 8px;
+
+  padding: 15px 0;
+
+  border-top: 1px solid var(--borde);
+  border-bottom: 1px solid var(--borde);
+}
+
+.league-metrics div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.league-metrics strong {
+  color: var(--azul-noche);
+
+  font-size: 21px;
+}
+
+.league-metrics span {
+  color: var(--texto-suave);
+
+  font-size: 11px;
+}
+
+.league-gap {
+  margin: 16px 0 0;
+
+  color: var(--texto-suave);
+
+  font-size: 13px;
+}
+
+
+/* =========================
+   CLASIFICACIÓN COMPLETA
+========================= */
+
+.league-section {
+  margin-top: 34px;
+
+  overflow: hidden;
+
+  background: var(--blanco);
+
+  border: 1px solid var(--borde);
+  border-top: 4px solid var(--dorado);
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 3px 12px rgba(7, 23, 47, 0.08);
+}
+
+.league-header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 24px;
+
+  padding: 26px;
+}
+
+.league-header h2 {
+  margin: 5px 0;
+
+  color: var(--azul-noche);
+
+  font-size: 28px;
+}
+
+.league-header p {
+  margin: 0;
+
+  color: var(--texto-suave);
+}
+
+.league-status {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  gap: 4px;
+
+  text-align: right;
+}
+
+.league-status strong {
+  color: var(--azul-noche);
+}
+
+.league-status span {
+  color: var(--dorado);
+
+  font-weight: bold;
+}
+
+
+/* =========================
+   TABLA DE LIGA
+========================= */
+
+.table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+.league-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  font-size: 14px;
+}
+
+.league-table thead {
+  background: var(--azul-noche);
+
+  color: var(--blanco);
+}
+
+.league-table th,
+.league-table td {
+  padding: 13px 10px;
+
+  text-align: center;
+
+  border-bottom: 1px solid var(--borde);
+}
+
+.league-table th {
+  font-size: 12px;
+
+  letter-spacing: 0.4px;
+}
+
+.league-table .team-column,
+.league-table .team-name {
+  text-align: left;
+}
+
+.league-table tbody tr {
+  transition:
+    background 0.15s ease;
+}
+
+.league-table tbody tr:hover {
+  background: #f5f7fa;
+}
+
+.orion-row {
+  background: #fffaf0;
+}
+
+.orion-row .team-name {
+  color: var(--azul-noche);
+
+  font-weight: bold;
+}
+
+.team-name {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  white-space: nowrap;
+}
+
+.table-logo {
+  width: 25px;
+  height: 25px;
+
+  object-fit: contain;
+}
+
+.position-badge {
+  display: inline-flex;
+
+  width: 27px;
+  height: 27px;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e8ecf0;
+
+  color: var(--azul-noche);
+
+  font-weight: bold;
+}
+
+.position-badge.first {
+  background: var(--dorado);
+
+  color: var(--azul-noche);
+}
+
+.points {
+  color: var(--azul-noche);
+
+  font-weight: bold;
+}
+
+.positive {
+  color: #257747;
+
+  font-weight: bold;
+}
+
+.negative {
+  color: #a54646;
+
+  font-weight: bold;
+}
+
+
+/* =========================
+   FORMA RECIENTE
+========================= */
+
+.form {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 4px;
+}
+
+.form span {
+  display: inline-flex;
+
+  width: 22px;
+  height: 22px;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+
+  color: var(--blanco);
+
+  font-size: 12px;
+
+  font-weight: bold;
+}
+
+.form .win {
+  background: var(--verde-victoria);
+}
+
+.form .loss {
+  background: var(--rojo-derrota);
+}
+
+.form .draw {
+  background: var(--gris-empate);
+}
+
+.form .empty {
+  background: #e6e8ea;
+
+  color: #a0a5aa;
+}
+
+
+/* =========================
+   PIE DE CLASIFICACIÓN
+========================= */
+
+.league-note {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 28px;
+
+  flex-wrap: wrap;
+
+  padding: 16px 24px;
+
+  background: var(--azul-noche);
+
+  color: var(--crema);
+
+  font-size: 13px;
+}
+
+.league-note span:first-child {
+  color: var(--dorado-claro);
+
+  font-weight: bold;
+}
+
+
+/* =========================
+   TARJETAS GENERALES
+========================= */
 
 .card {
   background: var(--blanco);
 
+  border: 1px solid var(--borde);
+  border-top: 4px solid var(--dorado);
+
   border-radius: 8px;
 
   padding: 24px;
-
-  border: 1px solid var(--borde);
-
-  border-top: 4px solid var(--dorado);
 
   box-shadow:
     0 2px 8px rgba(7, 23, 47, 0.08);
@@ -246,35 +847,24 @@ nav a:hover {
 }
 
 .card p {
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
-/* =========================
-   ENLACES
-========================= */
-
-a {
-  color: var(--azul-medio);
-}
-
-a:hover {
-  color: var(--dorado);
-}
 
 /* =========================
    FOOTER
 ========================= */
 
 footer {
+  margin-top: 40px;
+
+  padding: 28px 20px;
+
   background: var(--azul-noche);
 
   color: var(--blanco);
 
   text-align: center;
-
-  padding: 28px 20px;
-
-  margin-top: 40px;
 
   border-top: 3px solid var(--dorado);
 }
@@ -287,17 +877,35 @@ footer p {
   color: var(--crema);
 }
 
+
 /* =========================
-   RESPONSIVE
+   RESPONSIVE - TABLET
 ========================= */
 
 @media (max-width: 900px) {
 
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
+  .sports-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .league-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .league-status {
+    align-items: flex-start;
+
+    text-align: left;
   }
 
 }
+
+
+/* =========================
+   RESPONSIVE - MÓVIL
+========================= */
 
 @media (max-width: 750px) {
 
@@ -314,8 +922,6 @@ footer p {
   }
 
   nav a {
-    display: inline-block;
-
     margin: 6px 8px;
   }
 
@@ -326,7 +932,7 @@ footer p {
   }
 
   .hero-logo {
-    width: 135px;
+    width: 145px;
   }
 
   .hero .stars {
@@ -343,8 +949,80 @@ footer p {
     font-size: 18px;
   }
 
-  .grid {
-    grid-template-columns: 1fr;
+  .container {
+    padding:
+      34px
+      14px;
+  }
+
+  .section-heading h2 {
+    font-size: 26px;
+  }
+
+}
+
+
+/* =========================
+   RESPONSIVE - MÓVIL PEQUEÑO
+========================= */
+
+@media (max-width: 600px) {
+
+  .sports-card {
+    padding: 20px 14px;
+  }
+
+  .match,
+  .result-box {
+    gap: 8px;
+  }
+
+  .team-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .team-placeholder {
+    width: 48px;
+    height: 48px;
+  }
+
+  .match-team strong,
+  .result-team strong {
+    font-size: 12px;
+  }
+
+  .score {
+    font-size: 27px;
+  }
+
+  .position-number {
+    font-size: 46px;
+  }
+
+  .league-metrics strong {
+    font-size: 18px;
+  }
+
+  .league-note {
+    flex-direction: column;
+
+    gap: 7px;
+
+    text-align: center;
+  }
+
+  .league-header {
+    padding: 20px;
+  }
+
+  .league-table {
+    font-size: 12px;
+  }
+
+  .league-table th,
+  .league-table td {
+    padding: 10px 8px;
   }
 
 }
