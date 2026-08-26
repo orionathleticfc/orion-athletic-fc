@@ -79,7 +79,9 @@ nav a {
 
   font-weight: bold;
 
-  transition: color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
 }
 
 nav a:hover {
@@ -91,7 +93,7 @@ nav a:hover {
 ========================= */
 
 .hero {
-  min-height: 430px;
+  min-height: 390px;
 
   display: flex;
   align-items: center;
@@ -99,14 +101,14 @@ nav a:hover {
 
   text-align: center;
 
-  padding: 40px 20px;
+  padding: 42px 20px;
 
   background:
     radial-gradient(
-      circle at 50% 30%,
+      circle at 50% 28%,
       #163d68 0%,
-      #0d2748 35%,
-      #07172f 75%
+      #0d2748 36%,
+      #07172f 78%
     );
 
   color: var(--blanco);
@@ -114,13 +116,29 @@ nav a:hover {
   border-bottom: 4px solid var(--dorado);
 }
 
-.hero h2 {
-  font-size: 48px;
+.hero-content {
+  width: 100%;
+  max-width: 760px;
 
-  margin: 18px 0 12px;
-
-  color: var(--blanco);
+  margin: 0 auto;
 }
+
+/* Escudo principal */
+
+.hero-logo {
+  display: block;
+
+  width: 170px;
+  max-width: 45vw;
+  height: auto;
+
+  margin: 0 auto 18px;
+
+  filter:
+    drop-shadow(0 8px 18px rgba(0, 0, 0, 0.28));
+}
+
+/* Estrellas */
 
 .hero .stars {
   color: var(--dorado-claro);
@@ -129,15 +147,41 @@ nav a:hover {
 
   letter-spacing: 12px;
 
+  margin-bottom: 10px;
+
   text-shadow:
     0 0 8px rgba(240, 210, 122, 0.45);
 }
+
+/* Nombre */
+
+.hero h2 {
+  font-size: 48px;
+
+  margin: 12px 0 12px;
+
+  color: var(--blanco);
+}
+
+/* Texto principal */
 
 .hero p {
   font-size: 20px;
 
   color: var(--crema);
+
+  margin: 10px 0;
 }
+
+/* Lema */
+
+.hero-motto {
+  color: var(--dorado-claro) !important;
+
+  font-weight: bold;
+}
+
+/* Compatibilidad con highlight anterior */
 
 .highlight {
   color: var(--dorado-claro);
@@ -182,6 +226,17 @@ nav a:hover {
 
   box-shadow:
     0 2px 8px rgba(7, 23, 47, 0.08);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 6px 18px rgba(7, 23, 47, 0.10);
 }
 
 .card h3 {
@@ -236,18 +291,26 @@ footer p {
    RESPONSIVE
 ========================= */
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
 
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .hero {
-    min-height: 360px;
+}
+
+@media (max-width: 750px) {
+
+  header {
+    padding: 20px 16px;
   }
 
-  .hero h2 {
-    font-size: 34px;
+  header h1 {
+    font-size: 30px;
+  }
+
+  nav {
+    padding: 10px 8px;
   }
 
   nav a {
@@ -255,4 +318,33 @@ footer p {
 
     margin: 6px 8px;
   }
+
+  .hero {
+    min-height: 360px;
+
+    padding: 34px 18px;
+  }
+
+  .hero-logo {
+    width: 135px;
+  }
+
+  .hero .stars {
+    font-size: 23px;
+
+    letter-spacing: 9px;
+  }
+
+  .hero h2 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
 }
