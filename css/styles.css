@@ -1598,6 +1598,141 @@ footer p {
 
 }
 
+/* =========================
+   MINI TABLA DE LIGA - HOME
+========================= */
+
+.league-preview {
+  text-align: left;
+}
+
+.league-preview h3,
+.league-preview .card-label,
+.league-preview .competition-detail {
+  text-align: center;
+}
+
+.mini-table {
+  margin-top: 8px;
+
+  border: 1px solid var(--borde);
+
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+.mini-row {
+  display: grid;
+
+  grid-template-columns:
+    48px
+    minmax(0, 1fr)
+    50px
+    46px;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 10px 12px;
+
+  border-bottom: 1px solid var(--borde);
+
+  font-size: 13px;
+}
+
+.mini-row:last-child {
+  border-bottom: none;
+}
+
+.mini-header {
+  background: var(--azul-noche);
+
+  color: var(--blanco);
+
+  font-size: 11px;
+
+  font-weight: bold;
+}
+
+.mini-orion {
+  background: #fff8e9;
+
+  color: var(--azul-noche);
+
+  font-weight: bold;
+}
+
+.mini-team {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  min-width: 0;
+}
+
+.mini-logo {
+  width: 21px;
+  height: 21px;
+
+  object-fit: contain;
+
+  flex-shrink: 0;
+}
+
+.mini-table-link {
+  display: block;
+
+  margin-top: 16px;
+
+  padding: 11px 14px;
+
+  text-align: center;
+
+  border-radius: 7px;
+
+  background: var(--azul-noche);
+
+  color: var(--dorado-claro);
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mini-table-link:hover {
+  background: var(--azul-oscuro);
+
+  color: var(--blanco);
+
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+
+  .mini-row {
+    grid-template-columns:
+      38px
+      minmax(0, 1fr)
+      42px
+      38px;
+
+    padding: 9px 8px;
+
+    font-size: 12px;
+  }
+
+}
 
 /* =========================
    RESPONSIVE - MÓVIL PEQUEÑO
