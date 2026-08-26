@@ -3,107 +3,421 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Sitio oficial de Orion Athletic F.C., club de Hattrick de Bogotá, Colombia."
+  >
 
   <title>Orion Athletic F.C.</title>
 
-  <link rel="stylesheet" href="css/styles.css">
+  <link
+    rel="stylesheet"
+    href="css/styles.css"
+  >
 </head>
 
 <body>
 
+  <!-- =========================
+       CABECERA
+  ========================== -->
+
   <header>
+
     <h1>Orion Athletic F.C.</h1>
-    <p>Bogotá · Colombia</p>
-  </header>
 
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Club</a>
-    <a href="#">Plantilla</a>
-    <a href="#">Temporada</a>
-    <a href="#">Estadio</a>
-    <a href="#">Historia</a>
-    <a href="#">Palmarés</a>
-    <a href="#">Cantera</a>
-  </nav>
-
-<section class="hero">
-
-  <div class="hero-content">
-
-    <img
-      src="logoathletic.png"
-      alt="Escudo de Orion Athletic F.C."
-      class="hero-logo"
-    >
-
-    <div class="stars">★ ★ ★</div>
-
-    <h2>Orion Athletic F.C.</h2>
-
-    <p>Desde Bogotá, bajo las estrellas.</p>
-
-    <p class="hero-motto">
-      Nacidos para competir, destinados a brillar.
+    <p>
+      Bogotá · Colombia
     </p>
 
-  </div>
+  </header>
 
-</section>
+
+  <!-- =========================
+       NAVEGACIÓN
+  ========================== -->
+
+  <nav>
+
+    <a href="#inicio">Inicio</a>
+
+    <a href="#club">Club</a>
+
+    <a href="#plantilla">Plantilla</a>
+
+    <a href="#temporada">Temporada</a>
+
+    <a href="#estadio">Estadio</a>
+
+    <a href="#historia">Historia</a>
+
+    <a href="#palmares">Palmarés</a>
+
+    <a href="#cantera">Cantera</a>
+
+  </nav>
+
+
+  <!-- =========================
+       PORTADA
+  ========================== -->
+
+  <section
+    class="hero"
+    id="inicio"
+  >
+
+    <div class="hero-content">
+
+      <img
+        src="logoathletic.png"
+        alt="Escudo de Orion Athletic F.C."
+        class="hero-logo"
+      >
+
+      <div class="stars">
+        ★ ★ ★
+      </div>
+
+      <h2>
+        Orion Athletic F.C.
+      </h2>
+
+      <p>
+        Desde Bogotá, bajo las estrellas.
+      </p>
+
+      <p class="hero-motto">
+        Nacidos para competir, destinados a brillar.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       ACTUALIDAD
+  ========================== -->
 
   <main class="container">
 
     <div class="grid">
 
+
+      <!-- PRÓXIMO PARTIDO -->
+
       <section class="card">
-        <h3>El Club</h3>
+
+        <h3>
+          Próximo partido
+        </h3>
 
         <p>
-          Bienvenidos al sitio oficial de Orion Athletic F.C.
+          <strong>
+            Orion Athletic F.C.
+          </strong>
         </p>
 
         <p>
-          Un club construido alrededor de la competencia,
-          el crecimiento y una identidad propia.
+          vs
         </p>
+
+        <p>
+          <strong>
+            Guarilaqueiros
+          </strong>
+        </p>
+
+        <p>
+          Copa Cocuy Rubí
+        </p>
+
+        <p>
+          Ronda 4/10
+        </p>
+
+        <p>
+          <strong>
+            26/08/2026 · 17:10
+          </strong>
+        </p>
+
       </section>
 
 
+      <!-- ÚLTIMO RESULTADO -->
+
       <section class="card">
-        <h3>Canis Maior</h3>
+
+        <h3>
+          Último resultado
+        </h3>
 
         <p>
-          Nuestro hogar.
+          Liga V.167
         </p>
 
         <p>
-          Desde aquí Orion Athletic F.C. afronta cada partido
-          como local.
+          <strong>
+            Orion Athletic F.C.
+          </strong>
         </p>
+
+        <p
+          style="
+            font-size: 32px;
+            font-weight: bold;
+            color: #d6ad4b;
+            margin: 12px 0;
+          "
+        >
+          6 - 0
+        </p>
+
+        <p>
+          Tolima Deportivo
+        </p>
+
+        <p>
+          23/08/2026
+        </p>
+
       </section>
 
 
+      <!-- POSICIÓN EN LIGA -->
+
       <section class="card">
-        <h3>Temporada</h3>
+
+        <h3>
+          Liga V.167
+        </h3>
 
         <p>
-          Sigue aquí la actualidad del equipo:
+          Posición actual
+        </p>
+
+        <p
+          style="
+            font-size: 36px;
+            font-weight: bold;
+            color: #0d2748;
+            margin: 12px 0;
+          "
+        >
+          1.º
         </p>
 
         <p>
-          Liga · Copa · Resultados · Próximos partidos
+          <strong>
+            15 puntos
+          </strong>
         </p>
+
+        <p>
+          Diferencia de gol:
+          <strong>
+            +32
+          </strong>
+        </p>
+
+        <p>
+          2.º Arauca UD · 12 pts
+        </p>
+
       </section>
 
     </div>
 
+
+    <!-- =========================
+         ESTADO DE TEMPORADA
+    ========================== -->
+
+    <section
+      class="card"
+      id="temporada"
+      style="
+        margin-top: 24px;
+        text-align: center;
+      "
+    >
+
+      <h3>
+        Temporada actual
+      </h3>
+
+      <p>
+        Orion Athletic F.C. lidera actualmente la
+        <strong>
+          Liga V.167
+        </strong>
+        con 15 puntos.
+      </p>
+
+      <p>
+        El club continúa además su participación en la
+        <strong>
+          Copa Cocuy Rubí
+        </strong>,
+        donde disputará la ronda 4 de 10.
+      </p>
+
+    </section>
+
+
+    <!-- =========================
+         CLUB
+    ========================== -->
+
+    <section
+      class="card"
+      id="club"
+      style="margin-top: 24px;"
+    >
+
+      <h3>
+        Orion Athletic F.C.
+      </h3>
+
+      <p>
+        Orion Athletic F.C. es un club de Hattrick
+        con sede en Bogotá, Colombia.
+      </p>
+
+      <p>
+        El equipo compite actualmente en la Liga V.167
+        y disputa sus partidos como local en Canis Maior.
+      </p>
+
+    </section>
+
+
+    <!-- =========================
+         ESTADIO
+    ========================== -->
+
+    <section
+      class="card"
+      id="estadio"
+      style="margin-top: 24px;"
+    >
+
+      <h3>
+        Canis Maior
+      </h3>
+
+      <p>
+        El hogar de Orion Athletic F.C.
+      </p>
+
+      <p>
+        Desde Canis Maior, el club afronta sus partidos
+        como local acompañado por sus aficionados.
+      </p>
+
+    </section>
+
+
+    <!-- =========================
+         SECCIONES EN CONSTRUCCIÓN
+    ========================== -->
+
+    <section
+      class="card"
+      id="plantilla"
+      style="margin-top: 24px;"
+    >
+
+      <h3>
+        Plantilla
+      </h3>
+
+      <p>
+        Próximamente podrás consultar aquí la plantilla
+        de Orion Athletic F.C.
+      </p>
+
+    </section>
+
+
+    <section
+      class="card"
+      id="historia"
+      style="margin-top: 24px;"
+    >
+
+      <h3>
+        Historia
+      </h3>
+
+      <p>
+        Esta sección reunirá la historia del club,
+        sus temporadas y los momentos más importantes
+        desde su fundación.
+      </p>
+
+    </section>
+
+
+    <section
+      class="card"
+      id="palmares"
+      style="margin-top: 24px;"
+    >
+
+      <h3>
+        Palmarés
+      </h3>
+
+      <p>
+        Aquí se recopilarán títulos, ascensos,
+        récords y logros históricos de Orion Athletic F.C.
+      </p>
+
+    </section>
+
+
+    <section
+      class="card"
+      id="cantera"
+      style="margin-top: 24px;"
+    >
+
+      <h3>
+        Cantera
+      </h3>
+
+      <p>
+        Espacio dedicado a los juveniles,
+        promesas y jugadores formados por el club.
+      </p>
+
+    </section>
+
   </main>
 
 
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
   <footer>
 
-    <strong>Orion Athletic F.C.</strong>
+    <strong>
+      Orion Athletic F.C.
+    </strong>
+
+    <p>
+      Bogotá · Colombia
+    </p>
 
     <p>
       Sitio de aficionados dedicado al club de Hattrick.
