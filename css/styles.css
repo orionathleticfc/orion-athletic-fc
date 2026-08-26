@@ -1,28 +1,52 @@
 :root {
-  --verde: #176b3a;
-  --verde-oscuro: #0b3d26;
-  --dorado: #d8ad45;
+  /* Identidad Orion Athletic F.C. */
+  --azul-noche: #07172f;
+  --azul-oscuro: #0d2748;
+  --azul-medio: #163d68;
+
+  --dorado: #d6ad4b;
+  --dorado-claro: #f0d27a;
+
+  --crema: #f7f1df;
   --blanco: #ffffff;
-  --gris: #f4f5f4;
-  --texto: #1d2521;
+
+  --fondo: #eef1f4;
+  --texto: #172133;
+  --texto-suave: #5d6878;
+
+  --borde: #d7dce2;
 }
+
+/* =========================
+   BASE
+========================= */
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: var(--gris);
+  background: var(--fondo);
   color: var(--texto);
 }
 
+/* =========================
+   CABECERA
+========================= */
+
 header {
-  background: var(--verde-oscuro);
+  background: var(--azul-noche);
   color: var(--blanco);
   padding: 24px;
   text-align: center;
+
+  border-bottom: 3px solid var(--dorado);
 }
 
 header h1 {
@@ -32,94 +56,194 @@ header h1 {
 
 header p {
   margin: 8px 0 0;
-  color: #dce8e1;
+  color: var(--dorado-claro);
 }
 
+/* =========================
+   MENÚ
+========================= */
+
 nav {
-  background: var(--verde);
+  background: var(--azul-oscuro);
   padding: 14px;
   text-align: center;
+
+  border-bottom: 1px solid var(--dorado);
 }
 
 nav a {
-  color: white;
+  color: var(--blanco);
   text-decoration: none;
+
   margin: 0 14px;
+
   font-weight: bold;
+
+  transition: color 0.2s ease;
 }
 
 nav a:hover {
-  color: var(--dorado);
+  color: var(--dorado-claro);
 }
 
+/* =========================
+   PORTADA
+========================= */
+
 .hero {
-  min-height: 420px;
+  min-height: 430px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   text-align: center;
+
   padding: 40px 20px;
+
   background:
-    linear-gradient(rgba(5, 35, 22, 0.82), rgba(5, 35, 22, 0.88)),
-    radial-gradient(circle at center, #176b3a, #061d13);
-  color: white;
+    radial-gradient(
+      circle at 50% 30%,
+      #163d68 0%,
+      #0d2748 35%,
+      #07172f 75%
+    );
+
+  color: var(--blanco);
+
+  border-bottom: 4px solid var(--dorado);
 }
 
 .hero h2 {
   font-size: 48px;
-  margin-bottom: 12px;
+
+  margin: 18px 0 12px;
+
+  color: var(--blanco);
 }
 
 .hero .stars {
-  color: var(--dorado);
-  font-size: 26px;
+  color: var(--dorado-claro);
+
+  font-size: 27px;
+
   letter-spacing: 12px;
+
+  text-shadow:
+    0 0 8px rgba(240, 210, 122, 0.45);
 }
 
 .hero p {
   font-size: 20px;
+
+  color: var(--crema);
 }
+
+.highlight {
+  color: var(--dorado-claro);
+
+  font-weight: bold;
+}
+
+/* =========================
+   CONTENIDO
+========================= */
 
 .container {
   max-width: 1100px;
+
   margin: auto;
+
   padding: 40px 20px;
 }
 
+/* =========================
+   TARJETAS
+========================= */
+
 .grid {
   display: grid;
+
   grid-template-columns: repeat(3, 1fr);
+
   gap: 20px;
 }
 
 .card {
-  background: white;
-  border-radius: 10px;
+  background: var(--blanco);
+
+  border-radius: 8px;
+
   padding: 24px;
-  border-top: 4px solid var(--verde);
+
+  border: 1px solid var(--borde);
+
+  border-top: 4px solid var(--dorado);
+
+  box-shadow:
+    0 2px 8px rgba(7, 23, 47, 0.08);
 }
 
 .card h3 {
   margin-top: 0;
-  color: var(--verde-oscuro);
+
+  color: var(--azul-oscuro);
 }
 
-.highlight {
-  color: var(--dorado);
-  font-weight: bold;
+.card p {
+  line-height: 1.5;
 }
+
+/* =========================
+   ENLACES
+========================= */
+
+a {
+  color: var(--azul-medio);
+}
+
+a:hover {
+  color: var(--dorado);
+}
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
-  background: var(--verde-oscuro);
-  color: white;
+  background: var(--azul-noche);
+
+  color: var(--blanco);
+
   text-align: center;
+
   padding: 28px 20px;
+
   margin-top: 40px;
+
+  border-top: 3px solid var(--dorado);
 }
 
+footer strong {
+  color: var(--dorado-claro);
+}
+
+footer p {
+  color: var(--crema);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width: 750px) {
+
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 360px;
   }
 
   .hero h2 {
@@ -128,6 +252,7 @@ footer {
 
   nav a {
     display: inline-block;
+
     margin: 6px 8px;
   }
 }
